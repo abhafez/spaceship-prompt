@@ -11,7 +11,7 @@
 SPACESHIP_ELIXIR_SHOW="${SPACESHIP_ELIXIR_SHOW=true}"
 SPACESHIP_ELIXIR_PREFIX="${SPACESHIP_ELIXIR_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"}"
 SPACESHIP_ELIXIR_SUFFIX="${SPACESHIP_ELIXIR_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"}"
-SPACESHIP_ELIXIR_SYMBOL="${SPACESHIP_ELIXIR_SYMBOL="💧 "}"
+SPACESHIP_ELIXIR_SYMBOL="${SPACESHIP_ELIXIR_SYMBOL=" "}"
 SPACESHIP_ELIXIR_DEFAULT_VERSION="${SPACESHIP_ELIXIR_DEFAULT_VERSION=""}"
 SPACESHIP_ELIXIR_COLOR="${SPACESHIP_ELIXIR_COLOR="magenta"}"
 
@@ -36,7 +36,7 @@ spaceship_elixir() {
 
   if [[ $elixir_version == "" ]]; then
     spaceship::exists elixir || return
-    elixir_version=$(elixir -v 2>/dev/null | grep "Elixir" --color=never | cut -d ' ' -f 2)
+    elixir_version=$(elixir -v 2>/dev/null | grep "Elixir " --color=never | cut -d ' ' -f 2)
   fi
 
   [[ $elixir_version == "system" ]] && return

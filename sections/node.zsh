@@ -16,7 +16,7 @@ SPACESHIP_NODE_DEFAULT_VERSION="${SPACESHIP_NODE_DEFAULT_VERSION=""}"
 SPACESHIP_NODE_COLOR="${SPACESHIP_NODE_COLOR="green"}"
 
 # ------------------------------------------------------------------------------
-# Section
+# Section ⬢
 # ------------------------------------------------------------------------------
 
 # Show current version of node, exception system.
