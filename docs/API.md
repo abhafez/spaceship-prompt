@@ -105,7 +105,7 @@ echo $SPACESHIP_ROOT
 
 ## `spaceship::section <color> [prefix] <content> [suffix]`
 
-This command displays prompt section prefixed with `prefix`, suffixed with `suffix` and `content` painted in `color`. **Bold** style is applied by default.
+This command displays prompt section prefixed with `prefix`, suffixed with `suffix` and `content` painted in `color`. Is not bold for me, it's better with nerd fonts.
 
 `prefix`, `suffix` and `content` can contain escapes to set additional foreground color, background color and other visual effects. Read more about escapes in [13 Prompt Expansion](http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html) section of Zsh documentation.
 

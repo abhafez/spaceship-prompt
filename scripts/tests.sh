@@ -11,7 +11,7 @@ setopt shwordsplit
 # If we have tput, let's set colors
 if [[ ! -z $(which tput 2> /dev/null) ]]; then
   reset=$(tput sgr0)
-  bold=$(tput bold)
+  # bold=$(tput bold)
   red=$(tput setaf 1)
   green=$(tput setaf 2)
   yellow=$(tput setaf 3)
@@ -36,8 +36,8 @@ EXIT_CODE=0
 header() {
   [[ -n $2 ]] && color=$1 || color=$cyan
   [[ -n $2 ]] && content=${@:2} || content=$@
-
-  echo $color$bold
+# $color$bold
+  echo $color
   echo '--------------------------------------------------------------------------------'
   echo "$content"
   echo '--------------------------------------------------------------------------------'

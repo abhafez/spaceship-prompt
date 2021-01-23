@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/denysdovhan/spaceship-prompt">
+  <a href="https://github.com/abhafez/spaceship-prompt">
     <img alt="spaceship →~ prompt" src="https://cloud.githubusercontent.com/assets/3459374/21679181/46e24706-d34b-11e6-82ee-5efb3d2ba70f.png" width="400">
   </a>
   <br>🚀⭐ Spaceship ZSH <br>
@@ -16,8 +16,8 @@
       alt="NPM Version" />
   </a>
 
-  <a href="https://travis-ci.org/denysdovhan/spaceship-prompt">
-    <img src="https://img.shields.io/travis/denysdovhan/spaceship-prompt.svg?style=flat-square"
+  <a href="https://travis-ci.org/abhafez/spaceship-prompt">
+    <img src="https://img.shields.io/travis/abhafez/spaceship-prompt.svg?style=flat-square"
       alt="CI Status" />
   </a>
 
@@ -31,7 +31,7 @@
       alt="Spaceship ZSH Twitter" />
   </a>
 
-  <a href="https://patreon.com/denysdovhan">
+  <a href="https://patreon.com/abhafez">
     <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
       alt="Donate" />
   </a>
@@ -39,7 +39,7 @@
 
 <div align="center">
   <h4>
-    <a href="https://denysdovhan.com/spaceship-prompt/">Website</a> |
+    <a href="https://abhafez.com/spaceship-prompt/">Website</a> |
     <a href="#installing">Install</a> |
     <a href="#features">Features</a> |
     <a href="./docs/Options.md">Options</a> |
@@ -49,8 +49,8 @@
 
 <div align="center">
   <sub>Built with ❤︎ by
-  <a href="https://denysdovhan.com">Denys Dovhan</a> and
-  <a href="https://github.com/denysdovhan/spaceship-prompt/graphs/contributors">contributors </a>
+  <a href="https://abhafez.com">Denys Dovhan</a> and
+  <a href="https://github.com/abhafez/spaceship-prompt/graphs/contributors">contributors </a>
 </div>
 <br>
 
@@ -60,7 +60,7 @@ Spaceship is a minimalistic, powerful and extremely customizable [Zsh][zsh-url] 
   <img alt="Spaceship with Hyper and One Dark" src="https://user-images.githubusercontent.com/10276208/36086434-5de52ace-0ff2-11e8-8299-c67f9ab4e9bd.gif" width="980px">
 </p>
 
-<sub>Vist <a href="./docs/Troubleshooting.md#why-doesnt-my-prompt-look-like-the-preview">Troubleshooting</a> for similar setup and find more examples with different color schemes in <a href="https://github.com/denysdovhan/spaceship-prompt/wiki/Screenshots">Screenshots </a>wiki-page.</sub>
+<sub>Vist <a href="./docs/Troubleshooting.md#why-doesnt-my-prompt-look-like-the-preview">Troubleshooting</a> for similar setup and find more examples with different color schemes in <a href="https://github.com/abhafez/spaceship-prompt/wiki/Screenshots">Screenshots </a>wiki-page.</sub>
 
 ## Features
 
@@ -113,7 +113,7 @@ Spaceship is a minimalistic, powerful and extremely customizable [Zsh][zsh-url] 
 - Optional time stamps 12/24hr in format ([how to enable](./docs/Options.md#time-time)).
 - Execution time of the last command if it exceeds the set threshold.
 
-Want more features? Please, [open an issue](https://github.com/denysdovhan/spaceship-prompt/issues/new/choose) or send pull request.
+Want more features? Please, [open an issue](https://github.com/abhafez/spaceship-prompt/issues/new/choose) or send pull request.
 
 **💡 Tip:** Follow our Twitter to keep yourself updated about new features, improvements, and bugfixes.
 
@@ -130,7 +130,7 @@ Now that the requirements are satisfied, you can install Spaceship ZSH via any o
 
 **💡 Tip:** If you like this project ~~and want to get some stickers and postcards~~, consider becoming a patron:
 
-<a href="https://patreon.com/denysdovhan">
+<a href="https://patreon.com/abhafez">
   <img alt="Become a patron" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="150px">
 </a>
 
@@ -149,8 +149,11 @@ Done. This command should link `spaceship.zsh` as `prompt_spaceship_setup` to yo
 Clone this repo:
 
 ```zsh
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+git clone https://github.com/abhafez/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+cd ~/.oh-my-zsh/custom/themes/spaceship-prompt
+git checkout more-features
 ```
+
 
 Symlink `spaceship.zsh-theme` to your oh-my-zsh custom themes directory:
 
@@ -171,7 +174,7 @@ Set `ZSH_THEME="spaceship"` in your `.zshrc`.
 Add the following snippet in your `~/.zshrc`:
 
 ```
-antigen theme denysdovhan/spaceship-prompt
+antigen theme abhafez/spaceship-prompt
 ```
 
 ### [antibody]
@@ -179,7 +182,7 @@ antigen theme denysdovhan/spaceship-prompt
 Update your `.zshrc` file with the following line:
 
 ```
-antibody bundle denysdovhan/spaceship-prompt
+antibody bundle abhafez/spaceship-prompt
 ```
 
 ### [zgen]
@@ -187,7 +190,7 @@ antibody bundle denysdovhan/spaceship-prompt
 Add the following line to your `~/.zshrc` where you're adding your other Zsh plugins:
 
 ```
-zgen load denysdovhan/spaceship-prompt spaceship
+zgen load abhafez/spaceship-prompt spaceship
 ```
 
 ### [zplug]
@@ -195,7 +198,7 @@ zgen load denysdovhan/spaceship-prompt spaceship
 Use this command in your `.zshrc` to load Spaceship as prompt theme:
 
 ```
-zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+zplug "abhafez/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 ```
 
 ### Linux package manager
@@ -214,7 +217,7 @@ makepkg -si
 
 If you have problems with approaches above, follow these instructions:
 
-- Clone this repo `git clone https://github.com/denysdovhan/spaceship-prompt.git`
+- Clone this repo `git clone https://github.com/abhafez/spaceship-prompt.git`
 - Symlink `spaceship.zsh` to somewhere in [`$fpath`](http://www.refining-linux.org/archives/46/ZSH-Gem-12-Autoloading-functions/) as `prompt_spaceship_setup`.
 - Initialize prompt system and choose `spaceship`.
 
@@ -255,13 +258,13 @@ Spaceship works well out of the box, but you can customize almost everything if 
 
 You have ability to customize or disable specific elements of Spaceship. All options must be overridden in your `.zshrc` file **after** the theme.
 
-**💡 Tip:** Take a look at popular option presets or share your own configuration on [Presets](https://github.com/denysdovhan/spaceship-prompt/wiki/Presets) wiki page.
+**💡 Tip:** Take a look at popular option presets or share your own configuration on [Presets](https://github.com/abhafez/spaceship-prompt/wiki/Presets) wiki page.
 
 ## Troubleshooting
 
 Having trouble? Take a look at out [Troubleshooting](./docs/Troubleshooting.md) page.
 
-Still struggling? Please, [file an issue](https://github.com/denysdovhan/spaceship-prompt/issues/new/choose), describe your problem and we will gladly help you.
+Still struggling? Please, [file an issue](https://github.com/abhafez/spaceship-prompt/issues/new/choose), describe your problem and we will gladly help you.
 
 ## Related Projects
 
@@ -271,9 +274,9 @@ Here's a list of related projects that have been inspired by Spaceship ZSH.
 
 ## Team
 
-| [![Denys Dovhan](https://github.com/denysdovhan.png?size=100)](http://denysdovhan.com) | [![Salmanul Farzy](https://github.com/salmanulfarzy.png?size=100)](https://github.com/salmanulfarzy) | [![Maxim Baz](https://github.com/maximbaz.png?size=100)](https://github.com/maximbaz) |
+| [![Denys Dovhan](https://github.com/abhafez.png?size=100)](http://abhafez.com) | [![Salmanul Farzy](https://github.com/salmanulfarzy.png?size=100)](https://github.com/salmanulfarzy) | [![Maxim Baz](https://github.com/maximbaz.png?size=100)](https://github.com/maximbaz) |
 | :------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
-|                     [Denys Dovhan](https://github.com/denysdovhan)                     |                          [Salmanul Farzy](https://github.com/salmanulfarzy)                          |                       [Maxim Baz](https://github.com/maximbaz)                        |
+|                     [Denys Dovhan](https://github.com/abhafez)                     |                          [Salmanul Farzy](https://github.com/salmanulfarzy)                          |                       [Maxim Baz](https://github.com/maximbaz)                        |
 
 ## Donate
 
@@ -282,7 +285,7 @@ Hi! I work on this project in my spare time, in addition to my primary job. I ho
 |                                                                    Patreon                                                                     |                                                            Bitcoin                                                             |                                                            Ethereum                                                            |
 | :--------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
 |                                                         [Become a patron][patreon-url]                                                         |                                              `1FrPrQb6ACTkbSBAz9PduJWrDFfq41Ggb4`                                              |                                          `0x6aF39C917359897ae6969Ad682C14110afe1a0a1`                                          |
-| <a href="https://www.patreon.com/denysdovhan"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="150px"></a> | <img src="https://user-images.githubusercontent.com/3459374/33760933-1c9b81b4-dc10-11e7-8e4b-22d81f98c138.png" width="100px"/> | <img src="https://user-images.githubusercontent.com/3459374/33760932-1c7b3fb2-dc10-11e7-9774-411264d533da.png" width="100px"/> |
+| <a href="https://www.patreon.com/abhafez"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="150px"></a> | <img src="https://user-images.githubusercontent.com/3459374/33760933-1c9b81b4-dc10-11e7-8e4b-22d81f98c138.png" width="100px"/> | <img src="https://user-images.githubusercontent.com/3459374/33760932-1c7b3fb2-dc10-11e7-9774-411264d533da.png" width="100px"/> |
 
 This is your way make a clear statement: **My work is valued.**
 
@@ -290,17 +293,17 @@ I would appreciate your support! _Thank you!_
 
 ## License
 
-MIT © [Denys Dovhan](http://denysdovhan.com)
+MIT © [Denys Dovhan](http://abhafez.com)
 
 <!-- Badges -->
 
 [npm-url]: https://npmjs.org/package/spaceship-prompt
 [npm-image]: https://img.shields.io/npm/v/spaceship-prompt.svg?style=flat-square
-[ci-url]: https://travis-ci.org/denysdovhan/spaceship-prompt
-[ci-image]: https://img.shields.io/travis/denysdovhan/spaceship-prompt.svg?style=flat-square
+[ci-url]: https://travis-ci.org/abhafez/spaceship-prompt
+[ci-image]: https://img.shields.io/travis/abhafez/spaceship-prompt.svg?style=flat-square
 [zsh-url]: http://zsh.org/
 [zsh-image]: https://img.shields.io/badge/zsh-%3E%3Dv5.2-777777.svg?style=flat-square
-[patreon-url]: https://www.patreon.com/denysdovhan
+[patreon-url]: https://www.patreon.com/abhafez
 [patreon-image]: https://img.shields.io/badge/zsh-%3E%3Dv5.2-777777.svg?style=flat-square
 
 <!-- References -->

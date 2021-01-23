@@ -11,7 +11,7 @@
 # If we have tput, let's set colors
 if [[ ! -z $(which tput 2> /dev/null) ]]; then
   reset=$(tput sgr0)
-  bold=$(tput bold)
+  # bold=$(tput bold)
   red=$(tput setaf 1)
   green=$(tput setaf 2)
   yellow=$(tput setaf 3)
@@ -51,7 +51,7 @@ info()    { paint "$cyan"   "SPACESHIP: $@" ; }
 warn()    { paint "$yellow" "SPACESHIP: $@" ; }
 error()   { paint "$red"    "SPACESHIP: $@" ; }
 success() { paint "$green"  "SPACESHIP: $@" ; }
-code()    { paint "$bold"   "SPACESHIP: $@" ; }
+# code()    { paint "$bold"   "SPACESHIP: $@" ; }
 
 # Check if symlink is exists and remove it
 # USAGE:
