@@ -5,11 +5,11 @@
 # ------------------------------------------------------------------------------
 # Configuration
 # ------------------------------------------------------------------------------
-char=
+char='ﷺ '
 
 SPACESHIP_CHAR_PREFIX="${SPACESHIP_CHAR_PREFIX=""}"
 SPACESHIP_CHAR_SUFFIX="${SPACESHIP_CHAR_SUFFIX=""}"
-SPACESHIP_CHAR_SYMBOL="${SPACESHIP_CHAR_SYMBOL="' asd "}"
+SPACESHIP_CHAR_SYMBOL="${SPACESHIP_CHAR_SYMBOL=$char}"
 SPACESHIP_CHAR_SYMBOL_ROOT="${SPACESHIP_CHAR_SYMBOL_ROOT="$SPACESHIP_CHAR_SYMBOL"}"
 SPACESHIP_CHAR_SYMBOL_SECONDARY="${SPACESHIP_CHAR_SYMBOL_SECONDARY="$SPACESHIP_CHAR_SYMBOL"}"
 SPACESHIP_CHAR_COLOR_SUCCESS="${SPACESHIP_CHAR_COLOR_SUCCESS="green"}"
@@ -39,7 +39,7 @@ spaceship_char() {
 
   spaceship::section \
     "$color" \
-    "$SPACESHIP_CHAR_PREFIX" \
+    # "$SPACESHIP_CHAR_PREFIX" \
     "$char" \
-    "$SPACESHIP_CHAR_SUFFIX"
+    # "$SPACESHIP_CHAR_SUFFIX"
 }

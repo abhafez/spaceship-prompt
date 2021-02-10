@@ -4,10 +4,10 @@
 # ------------------------------------------------------------------------------
 # Configuration
 # ------------------------------------------------------------------------------
-local img="ﷺ "
+local img="ﷺ  "
 local terminal=$(ps -aux | grep `ps -p $$ -o ppid=` | awk 'NR==1{print $11}')
-if [[ $terminal == "/opt/visual-studio-code/cod" ]]; then
-  img="☪  "
+if [[ $terminal == "/opt/visual-studio-code/code" || $terminal == "/usr/share/code/code" ]]; then
+  img=" "
 fi
 
 SPACESHIP_CHAR_PREFIX="${SPACESHIP_CHAR_PREFIX=""}"
@@ -44,5 +44,5 @@ spaceship_char() {
     "$color" \
     "$SPACESHIP_CHAR_PREFIX" \
     "$char" \
-    "$SPACESHIP_CHAR_SUFFIX"
+    # "$SPACESHIP_CHAR_SUFFIX"
 }
